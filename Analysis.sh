@@ -27,7 +27,13 @@ function show_time () {
 
 hosts=()
 cont=0
-printf "Introduce el nombre de las Sedes a Analizar, y pusla Enter:\n"
+printf "███╗   ███╗███╗   ██╗███████╗     ██████╗███████╗███╗   ███╗███████╗██╗  ██╗\n"
+printf "████╗ ████║████╗  ██║██╔════╝    ██╔════╝██╔════╝████╗ ████║██╔════╝╚██╗██╔╝\n"
+printf "██╔████╔██║██╔██╗ ██║███████╗    ██║     █████╗  ██╔████╔██║█████╗   ╚███╔╝ \n"
+printf "██║╚██╔╝██║██║╚██╗██║╚════██║    ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝   ██╔██╗ \n"
+printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
+printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
+printf "\tIntroduce el nombre de las Sedes a Analizar, y pusla Enter:\n"
 while read site
 do
         if [[ $site != "" ]];
