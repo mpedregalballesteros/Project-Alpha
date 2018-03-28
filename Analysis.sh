@@ -34,6 +34,7 @@ printf "██║╚██╔╝██║██║╚██╗██║╚══
 printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
 printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
 printf "\tIntroduce el nombre de las Sedes a Analizar, y pusla Enter:\n"
+
 while read site
 do
         if [[ $site != "" ]];
@@ -68,3 +69,4 @@ do
                                 printf "\n"
                         fi
 done
+
