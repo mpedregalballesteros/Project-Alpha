@@ -33,18 +33,17 @@ printf "██╔████╔██║██╔██╗ ██║███�
 printf "██║╚██╔╝██║██║╚██╗██║╚════██║    ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝   ██╔██╗ \n"
 printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
 printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
-printf "\tIntroduce el nombre de las Sedes a Analizar, y pulsa Enter:\n"
+printf "\t Introduce el nombre de las Sedes a analizar, y pusla Enter: \n"
 
 while read site
 do
         if [[ $site != "" ]];
         then
                 hosts[cont++]=$site
-        else
+	else
                 break
         fi
 done
-
 
 for siteid in "${hosts[@]}"
 do
@@ -53,20 +52,20 @@ do
                 uptime="$(snmpwalk -Os -c ConsolTFjd -v 2c $siteid .1.3.6.1.6.3.10.2.1.3 2>/dev/null | cut -d ":" -f2)"
                         if [[ $uptime = "" ]];
                         then
-                                printf "\tRouter Apagado / No Alcanzable\n"
+                                printf "\t Router Inalcanzable | Router Offline \n"
+				continue
                         else
                                 printf "\tEl router esta arriba desde: "
                                 printf "\t%s" $(show_time $uptime)
                                 printf "\n"
-                        fi
+                        fi	
 
 
                 uptimebgp="$(snmpwalk -Os -c ConsolTFjd -v 2c $siteid  1.3.6.1.2.1.15.3.1.16 2>/dev/null | cut -d ":" -f2)"
                         if [[ $uptimebgp != "" ]];
                         then
-                                printf "\tLa BGP esta arriba desde : "
+                                printf "\tLa BGP esta establezida desde hace : "
                                 printf "\t%s" $(show_time $uptimebgp)
                                 printf "\n"
                         fi
 done
-
