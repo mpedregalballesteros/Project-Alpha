@@ -34,7 +34,7 @@ printf "██║╚██╔╝██║██║╚██╗██║╚══
 printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
 printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
 printf "\t Introduce el mnemonico o la loopback real de las sedes a analizar, y pusla Enter: \n"
-
+printf " POllas"
 while read site
 do
         if [[ $site != "" ]];
