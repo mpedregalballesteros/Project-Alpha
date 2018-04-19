@@ -1,4 +1,4 @@
-#  Project Alfa                                     
+#  Project Alpha                                     
 
 Script en Bash para el Analisis por SNMP de los equipos gestionados de Cemex.
 
