@@ -64,7 +64,7 @@ do
                 uptimebgp="$(snmpwalk -Os -c ConsolTFjd -v 2c $siteid  1.3.6.1.2.1.15.3.1.16 2>/dev/null | cut -d ":" -f2)"
                         if [[ $uptimebgp != "" ]];
                         then
-                                printf "\tLa BGP esta establezida desde hace : "
+                                printf "\tLa BGP esta establecida desde hace : "
                                 printf "\t%s" $(show_time $uptimebgp)
                                 printf "\n"
                         fi
