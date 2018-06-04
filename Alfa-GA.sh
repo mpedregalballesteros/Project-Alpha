@@ -35,11 +35,7 @@ printf "██╔████╔██║██╔██╗ ██║███�
 printf "██║╚██╔╝██║██║╚██╗██║╚════██║    ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝   ██╔██╗ \n"
 printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
 printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
-<<<<<<< HEAD
-printf "Introduce el mnemonico o la loopback real de las sedes a analizar, y pusla Enter: \n"
-=======
 printf "Introduce el mnemonico o la loopback real de las sedes a analizar, y Pulsa Enter: \n"
->>>>>>> 79ec05f4fc0ab046fd1cd0de2f7cb3a3d8d4a661
 
 while read site
 do
@@ -70,13 +66,8 @@ do
                 uptimebgp="$(snmpwalk -Os -c ConsolTFjd -v 2c $siteid  1.3.6.1.2.1.15.3.1.16 2>/dev/null | cut -d ":" -f2)"
                         if [[ $uptimebgp != "" ]];
                         then
-<<<<<<< HEAD
-                                printf "\tLa BGP esta establecida desde hace : "
-                                printf "\t%s" $(show_time $uptimebgp)
-=======
                                 printf "\tLa BGP esta establecida desde: "
                                 printf "\t%2s" $(show_time $uptimebgp)
->>>>>>> 79ec05f4fc0ab046fd1cd0de2f7cb3a3d8d4a661
                                 printf "\n"
                         fi
 done
