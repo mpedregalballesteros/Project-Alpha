@@ -1,5 +1,5 @@
 #!/bin/bash
-# Scipt Generado por Manuel Pedregal para el rapido analisis del estado de sedes mediante SNMP y un rapido diagnostico.
+# Script Generado por Manuel Pedregal para el rapido analisis del estado de sedes mediante SNMP.
 # Script Escrito en Bash para su facil ejecucion desde cualquir maquina de Salto intermedio, sin esta, se puede usar WLS en Win10 para la ejecucion.
 function show_time () {
     num=$1
