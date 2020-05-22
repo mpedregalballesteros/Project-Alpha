@@ -20,6 +20,5 @@ Se tiene que introducir el mnemonico recortardo (PAIS-SITEID)
 2. Añadir el analisis del uptime de Tunneles DMVPN.
    - Añadir alguna funcion para que dependiendo del site devuelva el output de la BGP o del DMVPN (dependiendo del tipo de Sitio)
 3. ~~Añadir show logs (si es viable)~~ No viable Output directo.
-4. -----Pollas-----
 
 ---
