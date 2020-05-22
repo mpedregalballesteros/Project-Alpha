@@ -36,7 +36,6 @@ printf "██║╚██╔╝██║██║╚██╗██║╚══
 printf "██║ ╚═╝ ██║██║ ╚████║███████║    ╚██████╗███████╗██║ ╚═╝ ██║███████╗██╔╝ ██╗\n"
 printf "╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝     ╚═════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n"
 printf "Introduce el mnemonico o la loopback real de las sedes a analizar, y Pulsa Enter: \n"
-printf "Prueba Alejandro"
 
 while read site
 do
